@@ -1,0 +1,94 @@
+/* Font Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* Global */
+:root{
+    /* Colors */
+    --Blue: #3F4778;
+    --Font-color: #3D3D4E;
+    --White: #FFFFFF;
+    --Light: #EFF3F5;
+    --Bg-light: #ECE8F4;
+    /* Gradients */
+    --color-blue-gradient: linear-gradient(180deg, #2C3C54 0%, #2C3C54 0.01%, rgba(63, 71, 120, 0.85) 100%);
+    /* Fonts */
+    --Quicksand: 'Quicksand', sans-serif;
+    /* Shadows */
+    --box-shadow: 0px -70px 60px 40px rgba(61, 61, 78, 0.38);
+}
+* , ::before , ::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--Quicksand);
+}
+h1,h2,h3,p,b,a{
+    color: var(--Font-color);
+}
+h1 {
+    font-size: 3.125rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+p, a, b {
+    font-size: 1.125rem;
+}
+.btn-blue {
+    padding: 20px 50px;
+    background-color: var(--Blue);
+    color: var(--White);
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-white {
+    padding: 20px 50px;
+    background-color: var(--White);
+    color: var(--Font-color);
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Container */
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* Small */
+@media (min-width: 576px) {
+    .container{
+        width: 540px;
+    }
+}
+
+/* Medium */
+@media (min-width: 768px) {
+    .container{
+        width: 720px;
+    }
+}
+
+/* Large */
+@media (min-width: 992px) {
+    .container{
+        width: 960px;
+    }
+    
+}
+
+/* X-Large */
+@media (min-width: 1200px) {
+    .container{
+        width: 1140px;
+    }
+}
+
+/* XX-Large */
+@media (min-width: 1400px) {
+    .container{
+        width: 1320px;
+    }
+}

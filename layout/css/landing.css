@@ -1,0 +1,394 @@
+section.landing {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    padding: 10px;
+}
+section.landing .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-start;
+    height: 100%;
+    overflow: visible;
+    background: var(--color-blue-gradient);
+    border-radius: 30px 30px 0 0;
+    padding: 1rem;
+    gap: 50px;
+}
+section.landing .container .typography {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+}
+section.landing .container .typography h1 {
+    color: var(--White);
+    text-align: center;
+    font-size: 2rem;
+}
+section.landing .container .typography p {
+    width: 100%;
+    color: var(--White);
+    text-align: center;
+}
+section.landing .container .img-hotel-building {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+section.landing .container .search {
+    width: 100%;
+    background-color: var(--White);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    border-radius: 15px;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    position: relative;
+    box-shadow: none;
+    margin: 0;
+    gap: 20px;
+}
+section.landing .container .search div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    width: fit-content;
+    gap: 20px;
+}
+section.landing .container .search div svg {
+    font-size: 23px;
+    color: var(--Font-color);
+}
+section.landing .container .search div input[type="text"] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: fit-content;
+}
+section.landing .container .search div input[type="text"]:hover {
+    border: 1px solid var(--Font-color);
+}
+section.landing .container .search div input[type="number"] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 40px;
+}
+section.landing .container .search button {
+    border: none;
+    outline: none;
+}
+/* Small */
+@media (min-width: 576px) {
+}
+
+/* Medium */
+@media (min-width: 768px) {
+    section.landing .container .img-hotel-building img {
+        width: 150%;
+        object-fit: cover;
+        object-position: -260px -150px;
+    }
+}
+
+/* Large */
+@media (min-width: 992px) {
+    section.landing {
+        width: 100%;
+        height: 75vh;
+        position: relative;
+        padding: 0;
+    }
+    section.landing .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: flex-start;
+        height: 100%;
+        overflow: visible;
+        background: var(--color-blue-gradient);
+        border-radius: 60px 60px 0 0;
+        padding: 3.75rem;
+        padding-bottom: 0;
+        position: relative;
+    }
+    section.landing .container .img-hotel-building {
+        width: 70%;
+        object-fit: cover;
+        object-position: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        bottom: -42px;
+        overflow: hidden;
+        left: 310px;
+        justify-content: flex-end;
+    }
+    section.landing .container .img-hotel-building img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    section.landing .container .typography {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    section.landing .container .typography p {
+        width: 60%;
+        color: var(--White);
+        text-align: start;
+    }
+    section.landing .container .typography h1 {
+        color: var(--White);
+        text-align: start;
+        font-size: 3.125rem;
+    }
+    section.landing .container .typography a {
+        margin-top: 20px;
+    }
+    section.landing .container .search {
+        width: 95%;
+        background-color: var(--White);
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 120px;
+        align-content: center;
+        flex-wrap: nowrap;
+        position: absolute;
+        bottom: -80px;
+        box-shadow: var(--box-shadow);
+        margin: 0 auto;
+    }
+}
+
+/* X-Large */
+@media (min-width: 1200px) {
+    section.landing {
+        width: 100%;
+        height: 75vh;
+        position: relative;
+        padding: 0;
+    }
+    section.landing .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: flex-start;
+        height: 100%;
+        overflow: visible;
+        background: var(--color-blue-gradient);
+        border-radius: 60px 60px 0 0;
+        padding: 3.75rem;
+        padding-bottom: 0;
+        position: relative;
+    }
+    section.landing .container .img-hotel-building {
+        width: 50%;
+        object-fit: cover;
+        object-position: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        bottom: -32px;
+        overflow: hidden;
+        left: 550px;
+        justify-content: flex-end;
+    }
+    section.landing .container .img-hotel-building img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    section.landing .container .typography {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
+        position: relative;
+        z-index: 99;
+    }
+    section.landing .container .typography p {
+        width: 60%;
+        color: var(--White);
+        text-align: start;
+    }
+    section.landing .container .typography h1 {
+        color: var(--White);
+        text-align: start;
+        font-size: 3.125rem;
+
+    }
+    section.landing .container .typography a {
+        margin-top: 20px;
+    }
+    section.landing .container .search {
+        width: 95%;
+        background-color: var(--White);
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 120px;
+        align-content: center;
+        flex-wrap: nowrap;
+        position: absolute;
+        bottom: -80px;
+        box-shadow: var(--box-shadow);
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1200px) and (min-height: 800px) {
+    section.landing .container .img-hotel-building {
+        width: 70%;
+        object-fit: cover;
+        object-position: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        bottom: -42px;
+        overflow: hidden;
+        left: 310px;
+        justify-content: flex-end;
+    }
+    section.landing .container .img-hotel-building img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    section.landing .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: flex-start;
+        height: 100%;
+        overflow: visible;
+        background: var(--color-blue-gradient);
+        border-radius: 60px 60px 0 0;
+        padding: 3.75rem;
+        padding-bottom: 0;
+        position: relative;
+    }
+    section.landing .container .search {
+        width: 95%;
+        background-color: var(--White);
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 120px;
+        align-content: center;
+        flex-wrap: nowrap;
+        position: absolute;
+        bottom: -80px;
+        box-shadow: var(--box-shadow);
+        margin: 0 auto;
+    }
+}
+/* XX-Large */
+@media (min-width: 1400px) {
+    section.landing {
+        width: 100%;
+        height: 75vh;
+        position: relative;
+        padding: 0;
+    }
+    section.landing .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: flex-start;
+        height: 100%;
+        overflow: visible;
+        background: var(--color-blue-gradient);
+        border-radius: 60px 60px 0 0;
+        padding: 3.75rem;
+        padding-bottom: 0;
+        position: relative;
+    }
+    section.landing .container .img-hotel-building {
+        width: 70%;
+        object-fit: cover;
+        object-position: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        bottom: -42px;
+        overflow: hidden;
+        left: 310px;
+        justify-content: flex-end;
+    }
+    section.landing .container .img-hotel-building img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    section.landing .container .typography {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    section.landing .container .typography p {
+        width: 60%;
+        color: var(--White);
+        text-align: start;
+    }
+    section.landing .container .typography h1 {
+        color: var(--White);
+        text-align: start;
+        font-size: 3.125rem;
+
+    }
+    section.landing .container .typography a {
+        margin-top: 20px;
+    }
+    section.landing .container .search {
+        width: 95%;
+        background-color: var(--White);
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 120px;
+        align-content: center;
+        flex-wrap: nowrap;
+        position: absolute;
+        bottom: -80px;
+        box-shadow: var(--box-shadow);
+        margin: 0 auto;
+    }
+}
